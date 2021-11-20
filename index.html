@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e517d223f.js" crossorigin="anonymous"></script>
+    <title>FULLSTACK PRACTICAL</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
+        body {
+            background: url(./images/imgh.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            margin-top: 95px;
+            background-color: rgb(250, 219, 162);
+        }
+        .container{
+            height:80vh;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            scroll-padding-top: 2rem;
+            scroll-behavior: none;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .input-box {
+            flex: 1 1 7rem;
+            display: inline-block;
+            flex-direction: column;
+        }
+
+        .input-box span {
+            font-weight: 500;
+        }
+
+        .input-box input {
+            padding: 7px;
+            outline: none;
+            border: none;
+            background: #eeeff1;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .header-btn2 .enroll {
+            flex: 1 1 7rem;
+            padding: 10px 34px;
+            border: none;
+            border-radius: 0.5rem;
+            background: #474fa0;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+
+        }
+
+        .heading {
+            height: 200vh;
+            width: 100%;
+            background-color: palevioletred;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent;
+            padding: 15px 100px;
+            height: 30vh;
+
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .heading span {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .heading h1 {
+            font-size: 2rem;
+
+        }
+
+        .home {
+            width: 100%;
+            min-height: 100vh;
+            position: relative;
+            background: url(./images/car10.jpg);
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: cover;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        .text h1 {
+            margin-bottom: 5px;
+            margin: 45px;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+        }
+
+        .text span {
+            color: var(--main-color);
+        }
+
+        .text p {
+            margin: 5px;
+            margin-left: 45px;
+        }
+
+        .logo img {
+            height: 30vh;
+            width: 200px;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar a {
+            font-size: 1rem;
+            padding: 10px 20px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .navbar a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: var(--gradient);
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        #menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10001;
+            display: none;
+        }
+
+        .header-btn a {
+            padding: 10px 20px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .header-btn .fab {
+            color: rgb(55, 219, 55);
+        }
+
+        .header-btn2 a {
+            padding: 10px 20px;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .header-btn2 .enroll {
+            margin-top: 30px;
+            margin-left: 55px;
+            background: blueviolet;
+            color: white;
+            border-radius: 0%;
+        }
+
+        .header-btn2 .watch {
+            background: white;
+        }
+        .navbar li{
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <header>
+            <a href="#" class="logo"><img src="./images/imgc.png"></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">OUR PROGRAMS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <div class="header-btn">
+                <ul>
+                    <li>
+                        <i class="fab fa-whatsapp"><span style="color: black;"> +0-11-475-1433</span></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="home" id="home">
+            <div class="text">
+                <h1><span>Play, Learn and</span> <br>Grow <span style="color: rebeccapurple;">Together..</span></h1>
+                <p style="font-size: 20px;"><span>Rapidiousaly Conceptualize inexpensive value through functionalized
+                    <br> markets.Enthusiastiacally integrate distinctive web service vis-a-vis<br>
+                    end to end ROI.Assertively fashion best of breed products.
+                </span></p>
+                <div style="margin-top: 20px " class="header-btn2">
+                    <a href="#" class="enroll">Enroll Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="watch"><i class="fas fa-play-circle"></i>Watch Video</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
